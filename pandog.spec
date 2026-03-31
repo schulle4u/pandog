@@ -45,7 +45,6 @@ hiddenimports = [
 a = Analysis(
     [os.path.join(PROJECT_ROOT, 'src', 'main.py')],
     pathex=[os.path.join(PROJECT_ROOT, 'src')],
-    binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
     hookspath=[],
@@ -126,6 +125,5 @@ if IS_MACOS:
             'CFBundleSignature': 'PDG',
             'LSMinimumSystemVersion': '10.13.0',
             'NSHighResolutionCapable': True,
-            ],
         },
     )
