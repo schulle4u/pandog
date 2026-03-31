@@ -76,13 +76,13 @@ class DynamicMenuBar:
 
     def _build_file_menu_converter(self) -> wx.Menu:
         menu = wx.Menu()
-        item_add = menu.Append(wx.ID_OPEN, _("&Add files...\tCtrl+O"))
+        item_add = menu.Append(wx.ID_OPEN, _("&Add files") + "...\tCtrl+O")
         menu.AppendSeparator()
         self._append_recent_submenu(menu)
         menu.AppendSeparator()
-        item_settings = menu.Append(ID_SETTINGS, _("&Settings...\tCtrl+,"))
+        item_settings = menu.Append(ID_SETTINGS, _("&Settings") + "...\tCtrl+,")
         menu.AppendSeparator()
-        item_quit = menu.Append(wx.ID_EXIT, _("&Quit\tAlt+F4"))
+        item_quit = menu.Append(wx.ID_EXIT, _("&Quit") + "\tAlt+F4")
 
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_add_files, item_add)
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_settings, item_settings)
@@ -91,17 +91,17 @@ class DynamicMenuBar:
 
     def _build_file_menu_editor(self) -> wx.Menu:
         menu = wx.Menu()
-        item_new = menu.Append(wx.ID_NEW, _("&New\tCtrl+N"))
-        item_open = menu.Append(wx.ID_OPEN, _("&Open...\tCtrl+O"))
+        item_new = menu.Append(wx.ID_NEW, _("&New") + "\tCtrl+N")
+        item_open = menu.Append(wx.ID_OPEN, _("&Open") + "...\tCtrl+O")
         menu.AppendSeparator()
-        item_save = menu.Append(wx.ID_SAVE, _("&Save\tCtrl+S"))
-        item_save_as = menu.Append(wx.ID_SAVEAS, _("Save &As...\tCtrl+Shift+S"))
+        item_save = menu.Append(wx.ID_SAVE, _("&Save") + "\tCtrl+S")
+        item_save_as = menu.Append(wx.ID_SAVEAS, _("Save &As") + "...\tCtrl+Shift+S")
         menu.AppendSeparator()
         self._append_recent_submenu(menu)
         menu.AppendSeparator()
-        item_settings = menu.Append(ID_SETTINGS, _("&Settings...\tCtrl+,"))
+        item_settings = menu.Append(ID_SETTINGS, _("&Settings") + "...\tCtrl+,")
         menu.AppendSeparator()
-        item_quit = menu.Append(wx.ID_EXIT, _("&Quit\tAlt+F4"))
+        item_quit = menu.Append(wx.ID_EXIT, _("&Quit") + "\tAlt+F4")
 
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_new, item_new)
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_open_editor, item_open)
@@ -113,14 +113,14 @@ class DynamicMenuBar:
 
     def _build_edit_menu(self) -> wx.Menu:
         menu = wx.Menu()
-        item_undo = menu.Append(wx.ID_UNDO, _("&Undo\tCtrl+Z"))
-        item_redo = menu.Append(wx.ID_REDO, _("&Redo\tCtrl+Y"))
+        item_undo = menu.Append(wx.ID_UNDO, _("&Undo") + "\tCtrl+Z")
+        item_redo = menu.Append(wx.ID_REDO, _("&Redo") + "\tCtrl+Y")
         menu.AppendSeparator()
-        item_cut = menu.Append(wx.ID_CUT, _("Cu&t\tCtrl+X"))
-        item_copy = menu.Append(wx.ID_COPY, _("&Copy\tCtrl+C"))
-        item_paste = menu.Append(wx.ID_PASTE, _("&Paste\tCtrl+V"))
+        item_cut = menu.Append(wx.ID_CUT, _("Cu&t") + "\tCtrl+X")
+        item_copy = menu.Append(wx.ID_COPY, _("&Copy") + "\tCtrl+C")
+        item_paste = menu.Append(wx.ID_PASTE, _("&Paste") + "\tCtrl+V")
         menu.AppendSeparator()
-        item_select_all = menu.Append(wx.ID_SELECTALL, _("Select &all\tCtrl+A"))
+        item_select_all = menu.Append(wx.ID_SELECTALL, _("Select &all") + "\tCtrl+A")
 
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_undo, item_undo)
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_redo, item_redo)
@@ -132,8 +132,8 @@ class DynamicMenuBar:
 
     def _build_view_menu(self) -> wx.Menu:
         menu = wx.Menu()
-        item_converter = menu.Append(wx.ID_ANY, _("&Converter tab\tCtrl+1"))
-        item_editor = menu.Append(wx.ID_ANY, _("&Editor tab\tCtrl+2"))
+        item_converter = menu.Append(wx.ID_ANY, _("&Converter tab") + "\tCtrl+1")
+        item_editor = menu.Append(wx.ID_ANY, _("&Editor tab") + "\tCtrl+2")
 
         self._frame.Bind(wx.EVT_MENU, lambda e: self._frame.notebook.SetSelection(TAB_CONVERTER), item_converter)
         self._frame.Bind(wx.EVT_MENU, lambda e: self._frame.notebook.SetSelection(TAB_EDITOR), item_editor)
@@ -141,7 +141,7 @@ class DynamicMenuBar:
 
     def _build_help_menu(self) -> wx.Menu:
         menu = wx.Menu()
-        item_about = menu.Append(wx.ID_ABOUT, _("&About PanDoG..."))
+        item_about = menu.Append(wx.ID_ABOUT, _("&About PanDoG") + "...")
         self._frame.Bind(wx.EVT_MENU, self._frame.on_menu_about, item_about)
         return menu
 

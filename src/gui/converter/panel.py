@@ -66,9 +66,9 @@ class ConverterPanel(wx.Panel):
 
         # Buttons
         btn_sizer = wx.BoxSizer(wx.HORIZONTAL)
-        self._btn_add = wx.Button(panel, label=_("&Add files..."))
+        self._btn_add = wx.Button(panel, label=_("&Add files") + "...")
         self._btn_add.SetName('btn_add_files')
-        self._btn_add_dir = wx.Button(panel, label=_("Add &directory..."))
+        self._btn_add_dir = wx.Button(panel, label=_("Add &directory") + "...")
         self._btn_add_dir.SetName('btn_add_directory')
         self._btn_remove = wx.Button(panel, label=_("&Remove"))
         self._btn_remove.SetName('btn_remove_file')
@@ -127,7 +127,7 @@ class ConverterPanel(wx.Panel):
         dir_row = wx.BoxSizer(wx.HORIZONTAL)
         self._txt_output_dir = wx.TextCtrl(panel)
         self._txt_output_dir.SetName('txt_output_dir')
-        self._btn_browse_dir = wx.Button(panel, label=_("&Browse..."))
+        self._btn_browse_dir = wx.Button(panel, label=_("&Browse") + "...")
         self._btn_browse_dir.SetName('btn_browse_output_dir')
         dir_row.Add(self._txt_output_dir, 1, wx.EXPAND | wx.RIGHT, 4)
         dir_row.Add(self._btn_browse_dir, 0)

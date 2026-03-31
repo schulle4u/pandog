@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PanDoG\n"
-"POT-Creation-Date: 2026-03-30 14:07+0200\n"
-"PO-Revision-Date: 2026-03-30 17:06+0200\n"
+"POT-Creation-Date: 2026-03-31 13:53+0200\n"
+"PO-Revision-Date: 2026-03-31 13:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: gui/converter/panel.py:48
+#: gui/converter/panel.py:49
 msgid "Files"
 msgstr "Dateien"
 
@@ -32,79 +32,96 @@ msgstr "Größe"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: gui/converter/panel.py:69
-msgid "&Add files..."
-msgstr "Dateien &hinzufügen..."
+#: gui/converter/panel.py:69 gui/menubar.py:79
+msgid "&Add files"
+msgstr "Dateien &hinzufügen"
 
 #: gui/converter/panel.py:71
+msgid "Add &directory"
+msgstr "&Verzeichnis hinzufügen"
+
+#: gui/converter/panel.py:73
 msgid "&Remove"
 msgstr "&Entfernen"
 
-#: gui/converter/panel.py:74
+#: gui/converter/panel.py:76
 msgid "Clear &list"
 msgstr "&Liste leeren"
 
-#: gui/converter/panel.py:96
+#: gui/converter/panel.py:100
 msgid "Conversion options"
 msgstr "Konvertierungsoptionen"
 
-#: gui/converter/panel.py:105
+#: gui/converter/panel.py:109
 msgid "Input format:"
 msgstr "Eingabeformat:"
 
-#: gui/converter/panel.py:113 gui/editor/panel.py:80
+#: gui/converter/panel.py:117 gui/editor/panel.py:82
 msgid "Output format:"
 msgstr "Ausgabeformat:"
 
-#: gui/converter/panel.py:121
+#: gui/converter/panel.py:125
 msgid "Output directory:"
 msgstr "Ausgabeverzeichnis:"
 
-#: gui/converter/panel.py:126 gui/dialogs/settings.py:120
-msgid "&Browse..."
-msgstr "&Durchsuchen..."
+#: gui/converter/panel.py:130 gui/dialogs/settings.py:122
+msgid "&Browse"
+msgstr "&Durchsuchen"
 
-#: gui/converter/panel.py:134
+#: gui/converter/panel.py:138
 msgid "Use same directory as input file"
 msgstr "Selbes Verzeichnis wie Eingabedatei"
 
-#: gui/converter/panel.py:141
+#: gui/converter/panel.py:145
 msgid "Extra options:"
 msgstr "Zusätzliche Optionen:"
 
-#: gui/converter/panel.py:160
+#: gui/converter/panel.py:164
 msgid "&Convert"
 msgstr "&Konvertieren"
 
-#: gui/converter/panel.py:177
+#: gui/converter/panel.py:181
 msgid "(auto-detect)"
 msgstr "(automatisch erkennen)"
 
-#: gui/converter/panel.py:224 gui/main_window.py:114
+#: gui/converter/panel.py:232 gui/main_window.py:130
 msgid "Add files"
 msgstr "Dateien hinzufügen"
 
-#: gui/converter/panel.py:254
+#: gui/converter/panel.py:241 gui/converter/panel.py:250
+#: gui/converter/panel.py:261
+msgid "Add directory"
+msgstr "Verzeichnis hinzufügen"
+
+#: gui/converter/panel.py:249
+msgid "Include files from subdirectories?"
+msgstr "Dateien aus Unterverzeichnissen einbeziehen?"
+
+#: gui/converter/panel.py:260
+msgid "No files found in the selected directory."
+msgstr "Keine Dateien im gewählten Verzeichnis gefunden."
+
+#: gui/converter/panel.py:290
 msgid "Choose output directory"
 msgstr "Ausgabeverzeichnis wählen"
 
-#: gui/converter/panel.py:272
+#: gui/converter/panel.py:308
 msgid "Please select an output format."
 msgstr "Bitte ein Ausgabeformat wählen."
 
-#: gui/converter/panel.py:273
+#: gui/converter/panel.py:309
 msgid "No output format"
 msgstr "Kein Ausgabeformat"
 
-#: gui/converter/panel.py:280
+#: gui/converter/panel.py:316
 msgid "Converting…"
-msgstr "Konvertiere..."
+msgstr "Konvertiere…"
 
-#: gui/converter/panel.py:310
+#: gui/converter/panel.py:346
 msgid "Conversion finished with errors"
 msgstr "Konvertierung mit Fehlern fertiggestellt"
 
-#: gui/converter/panel.py:312
+#: gui/converter/panel.py:348
 msgid ""
 "Some files could not be converted:\n"
 "\n"
@@ -112,145 +129,173 @@ msgstr ""
 "Einige Dateien konnten nicht konvertiert werden:\n"
 "\n"
 
-#: gui/converter/panel.py:313
+#: gui/converter/panel.py:349
 msgid "Conversion errors"
 msgstr "Konvertierungsfehler"
 
-#: gui/converter/panel.py:320
+#: gui/converter/panel.py:356
 #, python-brace-format
 msgid "{n} file(s) converted successfully"
 msgstr "{n} Datei(en) erfolgreich konvertiert"
 
-#: gui/dialogs/settings.py:28
+#: gui/dialogs/settings.py:29
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: gui/dialogs/settings.py:52
+#: gui/dialogs/settings.py:54
 msgid "General"
 msgstr "Allgemein"
 
-#: gui/dialogs/settings.py:53 gui/notebook.py:30
+#: gui/dialogs/settings.py:55 gui/notebook.py:30
 msgid "Converter"
 msgstr "Konverter"
 
-#: gui/dialogs/settings.py:54
+#: gui/dialogs/settings.py:56
 msgid "Logging"
 msgstr "Protokollierung"
 
-#: gui/dialogs/settings.py:67
+#: gui/dialogs/settings.py:69
 msgid "General settings"
 msgstr "Allgemeine Einstellungen"
 
-#: gui/dialogs/settings.py:75
+#: gui/dialogs/settings.py:77
 msgid "Language:"
 msgstr "Sprache:"
 
-#: gui/dialogs/settings.py:87
+#: gui/dialogs/settings.py:89
 msgid "Theme:"
 msgstr "Theme:"
 
-#: gui/dialogs/settings.py:107
+#: gui/dialogs/settings.py:109
 msgid "Converter settings"
 msgstr "Konverter-Einstellungen"
 
-#: gui/dialogs/settings.py:115
+#: gui/dialogs/settings.py:117
 msgid "Pandoc path:"
 msgstr "Pandoc-Pfad:"
 
-#: gui/dialogs/settings.py:128
+#: gui/dialogs/settings.py:130
 msgid "Default output directory:"
 msgstr "Standard-Ausgabeverzeichnis:"
 
-#: gui/dialogs/settings.py:133
-msgid "B&rowse..."
-msgstr "&Durchsuchen..."
+#: gui/dialogs/settings.py:135
+msgid "B&rowse"
+msgstr "Durch&suchen"
 
-#: gui/dialogs/settings.py:142
+#: gui/dialogs/settings.py:144
 msgid "Default: use same directory as input file"
 msgstr "Standard: Selbes Verzeichnis wie Eingabedatei verwenden"
 
-#: gui/dialogs/settings.py:161
+#: gui/dialogs/settings.py:163
 msgid "Logging settings"
 msgstr "Protokollierungseinstellungen"
 
-#: gui/dialogs/settings.py:169
+#: gui/dialogs/settings.py:171
 msgid "Log level:"
 msgstr "Protokollierungsstufe:"
 
-#: gui/dialogs/settings.py:180
+#: gui/dialogs/settings.py:182
 msgid "Write log to file"
 msgstr "In Protokolldatei schreiben"
 
-#: gui/dialogs/settings.py:185
+#: gui/dialogs/settings.py:187
 msgid "Show log in console"
 msgstr "In Konsole anzeigen"
 
-#: gui/dialogs/settings.py:264
+#: gui/dialogs/settings.py:268
 msgid "Locate pandoc executable"
 msgstr "Pandoc-Anwendung lokalisieren"
 
-#: gui/dialogs/settings.py:273
+#: gui/dialogs/settings.py:277
 msgid "Choose default output directory"
 msgstr "Standard-Ausgabeverzeichnis wählen"
 
-#: gui/editor/panel.py:49 gui/notebook.py:31
+#: gui/editor/panel.py:50 gui/notebook.py:31
 msgid "Editor"
 msgstr "Editor"
 
-#: gui/editor/panel.py:73
+#: gui/editor/panel.py:75
 msgid "Conversion"
 msgstr "Konvertierung"
 
-#: gui/editor/panel.py:85
+#: gui/editor/panel.py:87
 msgid "&Save..."
 msgstr "&Speichern..."
 
-#: gui/editor/panel.py:87
+#: gui/editor/panel.py:89
 msgid "Save &As..."
 msgstr "Speichern &Unter..."
 
-#: gui/editor/panel.py:142 gui/editor/panel.py:150
+#: gui/editor/panel.py:144 gui/editor/panel.py:152
 msgid "Could not read file:\n"
 msgstr "Datei konnte nicht gelesen werden:\n"
 
-#: gui/editor/panel.py:143 gui/editor/panel.py:151 gui/editor/panel.py:233
-#: gui/editor/panel.py:255
+#: gui/editor/panel.py:145 gui/editor/panel.py:153 gui/editor/panel.py:271
+#: gui/editor/panel.py:293
 msgid "Error"
 msgstr "Fehler"
 
-#: gui/editor/panel.py:209 gui/editor/panel.py:211
+#: gui/editor/panel.py:212 gui/menubar.py:116
+msgid "&Undo"
+msgstr "&Rückgängig"
+
+#: gui/editor/panel.py:214 gui/menubar.py:117
+msgid "&Redo"
+msgstr "&Wiederholen"
+
+#: gui/editor/panel.py:217 gui/menubar.py:119
+msgid "Cu&t"
+msgstr "Aus&schneiden"
+
+#: gui/editor/panel.py:219 gui/menubar.py:120
+msgid "&Copy"
+msgstr "&Kopieren"
+
+#: gui/editor/panel.py:221 gui/menubar.py:121
+msgid "&Paste"
+msgstr "&Einfügen"
+
+#: gui/editor/panel.py:223
+msgid "&Delete"
+msgstr "&Löschen"
+
+#: gui/editor/panel.py:226 gui/menubar.py:123
+msgid "Select &all"
+msgstr "&Alles auswählen"
+
+#: gui/editor/panel.py:247 gui/editor/panel.py:249
 msgid "All files"
 msgstr "Alle Dateien"
 
-#: gui/editor/panel.py:214
+#: gui/editor/panel.py:252
 msgid "Save as"
 msgstr "Speichern unter"
 
-#: gui/editor/panel.py:232
+#: gui/editor/panel.py:270
 msgid "Conversion failed:\n"
 msgstr "Konvertierung fehlgeschlagen:\n"
 
-#: gui/editor/panel.py:254
+#: gui/editor/panel.py:292
 msgid "Could not save file:\n"
 msgstr "Datei konnte nicht gespeichert werden:\n"
 
-#: gui/editor/panel.py:272
+#: gui/editor/panel.py:314
 msgid "There are unsaved changes. Discard them?"
 msgstr "Es gibt ungespeicherte Änderungen. Sollen sie verworfen werden?"
 
-#: gui/editor/panel.py:273
+#: gui/editor/panel.py:315
 msgid "Unsaved changes"
 msgstr "Ungespeicherte Änderungen"
 
-#: gui/main_window.py:129
+#: gui/main_window.py:143
 msgid "Open file"
 msgstr "Datei öffnen"
 
-#: gui/main_window.py:191
+#: gui/main_window.py:208
 msgid "An accessible cross-platform GUI for Pandoc."
 msgstr "Ein barrierefreies GUI für Pandoc."
 
-#: gui/main_window.py:221
+#: gui/main_window.py:238
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
@@ -270,69 +315,41 @@ msgstr "&Hilfe"
 msgid "&Edit"
 msgstr "&Bearbeiten"
 
-#: gui/menubar.py:79
-msgid "&Add files...\tCtrl+O"
-msgstr "Dateien &hinzufügen...\tCtrl+O"
-
 #: gui/menubar.py:83 gui/menubar.py:102
-msgid "&Settings...\tCtrl+,"
-msgstr "&Einstellungen...\tCtrl+,"
+msgid "&Settings"
+msgstr "&Einstellungen"
 
 #: gui/menubar.py:85 gui/menubar.py:104
-msgid "&Quit\tAlt+F4"
-msgstr "&Beenden\tAlt+F4"
+msgid "&Quit"
+msgstr "&Beenden"
 
 #: gui/menubar.py:94
-msgid "&New\tCtrl+N"
-msgstr "&Neu\tCtrl+N"
+msgid "&New"
+msgstr "&Neu"
 
 #: gui/menubar.py:95
-msgid "&Open...\tCtrl+O"
-msgstr "Ö&ffnen...\tCtrl+O"
+msgid "&Open"
+msgstr "Ö&ffnen"
 
 #: gui/menubar.py:97
-msgid "&Save\tCtrl+S"
-msgstr "&Speichern\tCtrl+S"
+msgid "&Save"
+msgstr "&Speichern"
 
 #: gui/menubar.py:98
-msgid "Save &As...\tCtrl+Shift+S"
-msgstr "Speichern &Unter...\tCtrl+Shift+S"
-
-#: gui/menubar.py:116
-msgid "&Undo\tCtrl+Z"
-msgstr "&Rückgängig\tCtrl+Z"
-
-#: gui/menubar.py:117
-msgid "&Redo\tCtrl+Y"
-msgstr "&Wiederherstellen\tCtrl+Y"
-
-#: gui/menubar.py:119
-msgid "Cu&t\tCtrl+X"
-msgstr "Aus&schneiden\tCtrl+X"
-
-#: gui/menubar.py:120
-msgid "&Copy\tCtrl+C"
-msgstr "&Kopieren\tCtrl+C"
-
-#: gui/menubar.py:121
-msgid "&Paste\tCtrl+V"
-msgstr "&Einfügen\tCtrl+V"
-
-#: gui/menubar.py:123
-msgid "Select &all\tCtrl+A"
-msgstr "&Alles auswählen\tCtrl+A"
+msgid "Save &As"
+msgstr "Speichern &Unter"
 
 #: gui/menubar.py:135
-msgid "&Converter tab\tCtrl+1"
-msgstr "&Konverter\tCtrl+1"
+msgid "&Converter tab"
+msgstr "&Konverter"
 
 #: gui/menubar.py:136
-msgid "&Editor tab\tCtrl+2"
-msgstr "&Editor\tCtrl+2"
+msgid "&Editor tab"
+msgstr "&Editor"
 
 #: gui/menubar.py:144
-msgid "&About PanDoG..."
-msgstr "Ü&ber PanDoG..."
+msgid "&About PanDoG"
+msgstr "Ü&ber PanDoG"
 
 #: gui/menubar.py:159
 msgid "Clear list"
@@ -350,3 +367,42 @@ msgstr "Bereit"
 #, python-brace-format
 msgid "Ln {line}, Col {col}  |  {chars} chars, {words} words"
 msgstr "Z {line}, Sp {col}  |  {chars} Zeichen, {words} Worte"
+
+#~ msgid "&Add files..."
+#~ msgstr "Dateien &hinzufügen..."
+
+#~ msgid "Add &directory..."
+#~ msgstr "&Verzeichnis hinzufügen..."
+
+#~ msgid "&Add files...\tCtrl+O"
+#~ msgstr "Dateien &hinzufügen...\tCtrl+O"
+
+#~ msgid "&Settings...\tCtrl+,"
+#~ msgstr "&Einstellungen...\tCtrl+,"
+
+#~ msgid "&Quit\tAlt+F4"
+#~ msgstr "&Beenden\tAlt+F4"
+
+#~ msgid "&New\tCtrl+N"
+#~ msgstr "&Neu\tCtrl+N"
+
+#~ msgid "&Open...\tCtrl+O"
+#~ msgstr "Ö&ffnen...\tCtrl+O"
+
+#~ msgid "&Save\tCtrl+S"
+#~ msgstr "&Speichern\tCtrl+S"
+
+#~ msgid "Save &As...\tCtrl+Shift+S"
+#~ msgstr "Speichern &Unter...\tCtrl+Shift+S"
+
+#~ msgid "&Undo\tCtrl+Z"
+#~ msgstr "&Rückgängig\tCtrl+Z"
+
+#~ msgid "&Redo\tCtrl+Y"
+#~ msgstr "&Wiederherstellen\tCtrl+Y"
+
+#~ msgid "Cu&t\tCtrl+X"
+#~ msgstr "Aus&schneiden\tCtrl+X"
+
+#~ msgid "&Copy\tCtrl+C"
+#~ msgstr "&Kopieren\tCtrl+C"
