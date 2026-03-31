@@ -8,7 +8,7 @@
 #define SourceDir "dist\PanDoG"
 
 [Setup]
-AppId={{A3F2B1C4-9D7E-4F8A-B2C3-D1E5F6A7B8C9}
+; AppId={{A3F2B1C4-9D7E-4F8A-B2C3-D1E5F6A7B8C9}
 AppName={#AppName}
 AppVersion={#AppVersion}
 AppVerName={#AppName} {#AppVersion}
@@ -69,7 +69,7 @@ Source: "{#SourceDir}\{#AppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#SourceDir}\_internal\*"; DestDir: "{app}\_internal"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; Documentation
-Source: "{#SourceDir}\docs\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
+; Source: "{#SourceDir}\docs\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; Locale / translations
 Source: "{#SourceDir}\locale\*"; DestDir: "{app}\locale"; Flags: ignoreversion recursesubdirs createallsubdirs
