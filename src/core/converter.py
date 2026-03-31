@@ -170,6 +170,7 @@ class PandocConverter:
         try:
             result = subprocess.run(
                 [self.pandoc_path] + args,
+                creationflags=subprocess.CREATE_NO_WINDOW,
                 capture_output=True,
                 text=True,
                 encoding='utf-8',
