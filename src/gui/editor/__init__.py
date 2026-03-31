@@ -1,0 +1,3 @@
+"""
+Editor tab components
+"""

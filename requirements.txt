@@ -1,0 +1,12 @@
+# PanDoG - Dependencies
+
+# GUI Framework
+wxPython>=4.2.0
+
+# Configuration
+configparser>=6.0.0
+
+# External dependency: Pandoc
+# Windows: winget install JohnMacFarlane.Pandoc
+# Linux: sudo apt-get install pandoc (Ubuntu/Debian) or sudo dnf install pandoc (Fedora)
+# macOS: brew install pandoc

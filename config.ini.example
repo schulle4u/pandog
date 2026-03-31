@@ -1,0 +1,23 @@
+[General]
+language = en
+theme = dark
+
+[Converter]
+pandoc_path = pandoc
+pandoc_options = 
+
+[UI]
+window_width = 1936
+window_height = 1048
+window_x = 
+window_y = 
+
+[Recent]
+max_recent_items = 10
+
+[RecentFiles]
+
+[Logging]
+# Log levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
+level = INFO
+
