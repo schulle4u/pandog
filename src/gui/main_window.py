@@ -55,6 +55,12 @@ class MainFrame(wx.Frame):
         # Core objects
         pandoc_path = config.get('Converter', 'pandoc_path', fallback='pandoc')
         self._converter = PandocConverter(pandoc_path)
+        if not self._converter.is_available():
+            wx.MessageBox(
+                _("Pandoc is not available at: '{}' Please check that Pandoc has been installed correctly.").format(pandoc_path),
+                _("Error"),
+                wx.OK | wx.ICON_ERROR
+            )
 
         # Build UI
         self.statusbar = AppStatusBar(self)
