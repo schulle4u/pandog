@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PanDoG\n"
-"POT-Creation-Date: 2026-03-31 13:53+0200\n"
+"POT-Creation-Date: 2026-04-06 14:26+0200\n"
 "PO-Revision-Date: 2026-03-30 14:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "(auto-detect)"
 msgstr ""
 
-#: gui/converter/panel.py:232 gui/main_window.py:130
+#: gui/converter/panel.py:232 gui/main_window.py:136
 msgid "Add files"
 msgstr ""
 
@@ -130,9 +130,13 @@ msgstr ""
 msgid "Conversion errors"
 msgstr ""
 
-#: gui/converter/panel.py:356
+#: gui/converter/panel.py:356 gui/converter/panel.py:362
 #, python-brace-format
 msgid "{n} file(s) converted successfully"
+msgstr ""
+
+#: gui/converter/panel.py:357
+msgid "Conversion done"
 msgstr ""
 
 #: gui/dialogs/settings.py:29
@@ -228,7 +232,7 @@ msgid "Could not read file:\n"
 msgstr ""
 
 #: gui/editor/panel.py:145 gui/editor/panel.py:153 gui/editor/panel.py:271
-#: gui/editor/panel.py:293
+#: gui/editor/panel.py:293 gui/main_window.py:61
 msgid "Error"
 msgstr ""
 
@@ -284,15 +288,20 @@ msgstr ""
 msgid "Unsaved changes"
 msgstr ""
 
-#: gui/main_window.py:143
+#: gui/main_window.py:60
+#, python-brace-format
+msgid "Pandoc is not available at: '{}' Please check that Pandoc has been installed correctly."
+msgstr ""
+
+#: gui/main_window.py:149
 msgid "Open file"
 msgstr ""
 
-#: gui/main_window.py:208
+#: gui/main_window.py:214
 msgid "An accessible cross-platform GUI for Pandoc."
 msgstr ""
 
-#: gui/main_window.py:238
+#: gui/main_window.py:244
 msgid "Settings saved."
 msgstr ""
 
