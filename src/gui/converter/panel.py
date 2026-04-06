@@ -352,6 +352,12 @@ class ConverterPanel(wx.Panel):
             )
         else:
             n = len(self._files)
+            wx.MessageBox(
+                _("{n} file(s) converted successfully").format(n=n),
+                _("Conversion done"),
+                wx.OK | wx.ICON_INFORMATION,
+                self,
+            )
             self._statusbar.set_converter_status(
                 _("{n} file(s) converted successfully").format(n=n)
             )
